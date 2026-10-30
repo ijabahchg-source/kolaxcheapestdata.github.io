@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1318329809658768');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1318329809658768&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>MTN MEGA DATA · structured rectangular</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f4f8;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .page-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+            padding: 32px 28px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #edf0f3;
+        }
+
+        .badge-header {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFCC00;
+            border-radius: 6px;
+            padding: 10px 24px;
+            width: fit-content;
+            margin-bottom: 28px;
+            box-shadow: none;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 17px;
+            letter-spacing: 0.6px;
+        }
+
+        .badge-mtn {
+            color: #000000;
+            font-weight: 800;
+        }
+
+        .badge-mega {
+            color: #D00000;
+            font-weight: 800;
+            margin-left: 6px;
+        }
+
+        .main-title {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0a0a0a;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+
+        .subtitle-text {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 90%;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+
+        .amount-section {
+            margin-bottom: 32px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .section-label {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 16px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .amount-options {
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .amount-box {
+            flex: 1;
+            background-color: #ffffff;
+            border: 1.8px solid #d1d5db;
+            border-radius: 8px;
+            padding: 16px 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e1e1e;
+            cursor: pointer;
+            transition: border 0.1s, background 0.1s;
+            line-height: 1.2;
+            font-family: 'Inter', sans-serif;
+            box-shadow: none;
+        }
+
+        .amount-box.selected {
+            border-color: #1a1e24;
+            background-color: rgba(255, 204, 0, 0.04);
+            border-width: 2px;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            background-color: #FFCC00;
+            color: #000000;
+            font-weight: 700;
+            font-size: 18px;
+            height: 56px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            transition: background 0.2s;
+            box-shadow: none;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .cta-button:hover {
+            background-color: #ffd11a;
+            box-shadow: none;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .cta-button:active {
+            transform: scale(0.99);
+        }
+
+        .supporting-text {
+            font-size: 13.5px;
+            color: #7e848c;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-weight: 400;
+            padding: 0 4px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer {
+            font-size: 11.8px;
+            color: #90979e;
+            text-align: center;
+            line-height: 1.55;
+            margin-top: 18px;
+            padding-top: 20px;
+            border-top: 1px solid #e6eaee;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer strong {
+            font-weight: 600;
+            color: #6e757c;
+        }
+
+        .activity-popup {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 14px 22px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 48px);
+            transform: translateX(-420px);
+            opacity: 0;
+            transition: transform 0.35s ease, opacity 0.3s;
+            z-index: 1200;
+            border: 1px solid #e2e6ea;
+            pointer-events: auto;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .activity-popup.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .success-icon {
+            color: #28a745;
+            font-size: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .activity-message {
+            font-size: 14px;
+            color: #2d2f31;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 450px) {
+            .card {
+                padding: 28px 22px 32px;
+            }
+            .main-title {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .main-title {
+                font-size: 30px;
+            }
+            .amount-box {
+                font-size: 17px;
+                padding: 15px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+            <div class="badge-header">
+                <span class="badge-mtn">MTN</span>
+                <span class="badge-mega">MEGA DATA</span>
+            </div>
+
+            <h1 class="main-title">MTN Mega Data Bonus</h1>
+            <p class="subtitle-text">Follow a few steps to see if you may be approved.</p>
+
+            <div class="amount-section">
+                <div class="section-label">Select Amount</div>
+                <div class="amount-options">
+                    <div class="amount-box" data-amount="1.5">1.5GB</div>
+                    <div class="amount-box selected" data-amount="4">4GB</div>
+                    <div class="amount-box" data-amount="8">8GB</div>
+                </div>
+            </div>
+
+            <button class="cta-button" id="eligibility-button">CHECK ELIGIBILITY</button>
+
+            <p class="supporting-text">
+                Clicking the button will take you to another page where you subscribe 
+                and confirm your phone number to qualify for free data or airtime.
+            </p>
+
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> This service is subject to terms and conditions. 
+                Not all users will qualify for free data. Availability depends on network 
+                provider and eligibility criteria.
+            </div>
+        </div>
+    </div>
+
+    <div class="activity-popup" id="activity-popup">
+        <i class="fas fa-check-circle success-icon"></i>
+        <span class="activity-message" id="activity-message">
+            0810****74 – Glo network just received free data gift.
+        </span>
+    </div>
+
+    <script>
+        document.querySelectorAll('.amount-box').forEach(box => {
+            box.addEventListener('click', function() {
+                document.querySelectorAll('.amount-box').forEach(b => {
+                    b.classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
+        });
+
+        const popup = document.getElementById('activity-popup');
+        const messageElement = document.getElementById('activity-message');
+
+        const messages = [
+            "0810****74 – Glo network just received free data gift.",
+            "0903****21 – MTN network just received free data gift.",
+            "0805****89 – Airtel network just received free data gift.",
+            "0701****34 – 9mobile network just received free data gift.",
+            "0812****56 – Glo network just received free airtime.",
+            "0912****43 – MTN network just received free airtime.",
+            "0802****67 – Airtel network just received free data gift.",
+            "0814****98 – 9mobile network just received free airtime."
+        ];
+
+        let messageIndex = 0;
+        let isPopupVisible = false;
+        let autoHideTimeout;
+
+        function showNextMessage() {
+            if (isPopupVisible) {
+                popup.classList.remove('active');
+                isPopupVisible = false;
+
+                setTimeout(() => {
+                    messageElement.textContent = messages[messageIndex];
+                    messageIndex = (messageIndex + 1) % messages.length;
+
+                    setTimeout(() => {
+                        popup.classList.add('active');
+                        isPopupVisible = true;
+
+                        clearTimeout(autoHideTimeout);
+                        autoHideTimeout = setTimeout(() => {
+                            if (isPopupVisible) {
+                                popup.classList.remove('active');
+                                isPopupVisible = false;
+                            }
+                        }, 3500);
+                    }, 300);
+                }, 500);
+            } else {
+                messageElement.textContent = messages[messageIndex];
+                messageIndex = (messageIndex + 1) % messages.length;
+
+                setTimeout(() => {
+                    popup.classList.add('active');
+                    isPopupVisible = true;
+
+                    clearTimeout(autoHideTimeout);
+                    autoHideTimeout = setTimeout(() => {
+                        if (isPopupVisible) {
+                            popup.classList.remove('active');
+                            isPopupVisible = false;
+                        }
+                    }, 3500);
+                }, 100);
+            }
+        }
+
+        setTimeout(() => {
+            popup.classList.add('active');
+            isPopupVisible = true;
+
+            autoHideTimeout = setTimeout(() => {
+                if (isPopupVisible) {
+                    popup.classList.remove('active');
+                    isPopupVisible = false;
+                }
+            }, 3500);
+        }, 1500);
+
+        setInterval(showNextMessage, 4000);
+
+        popup.addEventListener('mouseenter', () => {
+            if (isPopupVisible) {
+                clearTimeout(autoHideTimeout);
+            }
+        });
+
+        popup.addEventListener('mouseleave', () => {
+            if (isPopupVisible) {
+                autoHideTimeout = setTimeout(() => {
+                    popup.classList.remove('active');
+                    isPopupVisible = false;
+                }, 2000);
+            }
+        });
+
+        document.getElementById('eligibility-button').addEventListener('click', function() {
+            const referralLink = "https://www.mousegrepby.wiki/click?offer_id=37502&pub_id=286194&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE";
+            window.location.href = referralLink;
+        });
+    </script>
+</body>
+</html>
